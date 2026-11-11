@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cyte730kv2744"]
+
+[ext_resource type="Texture2D" uid="uid://tn7oxs5j8cak" path="res://sprites/props_atlas.png" id="1_avsvi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(11, 20)
+
+[node name="Tree" type="Area2D" unique_id=1521970152]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=883620821]
+texture = ExtResource("1_avsvi")
+region_enabled = true
+region_rect = Rect2(0, 1, 48, 63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=180366470]
+position = Vector2(1, 21)
+shape = SubResource("RectangleShape2D_g4v7s")
